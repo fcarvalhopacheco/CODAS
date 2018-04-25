@@ -9,7 +9,7 @@ This is a guide to simplify and help with the CODAS installation available [here
 
 
 
-**For detailed  information, please visit:**
+## For detailed  information, please visit:
 - [Currents Group at the University of Hawaii](https://currents.soest.hawaii.edu/home/)
 - [UHDAS+CODAS Documentation](https://currents.soest.hawaii.edu/docs/adcp_doc/)
 
