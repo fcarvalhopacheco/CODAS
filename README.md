@@ -16,5 +16,5 @@ This is a guide to simplify and help with the CODAS installation available [here
 
 
 ## Installation Options:
-- [Anaconda]
+- [Anaconda](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/anaconda/codas_install.md)
 
