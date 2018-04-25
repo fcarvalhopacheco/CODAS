@@ -1,3 +1,28 @@
+# Installing CODAS softwater on Anaconda3
+- I am using Ubuntu 16.04
+
+
+## Step 1:
+- Download [Anaconda 3.6](https://www.anaconda.com/download/#linux)
+- Follow instructions [here-Anaconda]( https://docs.anaconda.com/anaconda/install/linux)
+
+## Step 2:
+- Create a Python 2.7 environment on your anaconda
+
+```
+$conda create -n py27 python=2.7 anaconda
+```
+- Activate Python 2.7
+
+```
+$source activate py27
+```
+
+
+
+
+
+
 # FIXXXX ME
 
 
