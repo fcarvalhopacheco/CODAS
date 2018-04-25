@@ -1,4 +1,7 @@
-## (1) Anaconda
+# FIXXXX ME
+
+
+# (1) Anaconda
 ---------------------------------------------
 # Download anaconda 3.6 from https://www.anaconda.com/download/#linux
 # Follow instruction from https://docs.anaconda.com/anaconda/install/linux 
