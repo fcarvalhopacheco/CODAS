@@ -1,4 +1,4 @@
-# Installing CODAS software on Anaconda3
+# Installing CODAS software on Anaconda3 (PYTHON2.7)
 - I am using Ubuntu 16.04
 
 
@@ -12,13 +12,10 @@
 **On Terminal:**
 ```python
 # Navigate to
-cd /home/your_username  
+$cd /home/your_username  
 
 # Open your bash_profile
-vi .bash_profile
-
-# close the editor
-:wq
+$vi .bash_profile
 
 ```
 You should be able to see something like
@@ -27,67 +24,117 @@ You should be able to see something like
 export PATH="/home/your_username/anaconda3/bin:$PATH"
 
 ```
+Close the editor
 
-If not, check on:
 ```python
-vi .bashrc
+:wq
 ```
-Go to last line by typing:
+
+
+If not, check at the end of the file:
 ```python
+#open bashrc
+$vi .bashrc
+
+# Type
 Shift+GG
 ```
 
-
-
-
 ## Step 2:
-Create a Python 2.7 environment in your anaconda
+- Create a Python 2.7 environment in your anaconda
 
-  ```
-  $conda create -n py27 python=2.7 anaconda
-  ```
+**On Terminal:**
+```python
+$conda create -n py27 python=2.7 anaconda
 
-Activate Python 2.7
-
-  ```
-  $source activate py27
-  ```
+# Type yes to download and extract packages
 
 
-source activate py27  # to use spyder 2.7
-----------------------------------------------
-# (2) Anaconda - Packages
-# Run the following codes with py27 activate
-conda install basemap # Or conda install anaconda=custom basemap if conflict
-conda install netcdf4
-conda install wxpython=3 #Or more recent? conda install -c anaconda wxpython 
-conda install future
--------------------------------------------
-# (4) Mercurial
-# https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/i# ndex.html
-# The link from website seems to be broken http://mercurial.selenic.com/
-sudo apt-get install mercurial
+# Activate Python 2.7
+$source activate py27
+```
 
----------------------------------------------
-# Aliases for wxpython on .bash_profile
-alias dv='pythonw `which dataviewer.py` '
-alias fv='pythonw `which figview.py` .'
-alias gg='pythonw `which gautoedit.py` -n5'
+## Step 3:
+- Install Anaconda packages on with py27 activated
 
----------------------------------------------
-# Directories + clone 
-sudo mkdir /home/adcpcode
-sudo chown youruser:yourgroup /home/adcpcode
+**On Terminal:**
+```python
 
-hg clone   http://currents.soest.hawaii.edu/hg/codas3          codas3
-hg clone   http://currents.soest.hawaii.edu/hg/pycurrents      pycurrents
-hg clone   http://currents.soest.hawaii.edu/hg/onship          onship
-hg clone   http://currents.soest.hawaii.edu/hg/uhdas           uhdas
----------------------------------------------
-# Compilling CODAS and Python extension
-# Compile and install codas3
-cd codas3 #on /home/adcpcode
-./waf configure --python_env
+$conda install basemap          # Or conda install anaconda=custom basemap if you see any conflict
+$conda install netcdf4
+$conda install wxpython=3        
+$conda install future
+```
+## Step 4:
+
+- Install Mercurial package 
+
+**On Terminal:**
+```python
+$sudo apt-get install mercurial
+```
+> The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
+
+
+## Step 5:
+
+- Create alias
+
+**On Terminal:**
+```python
+# Navite to:
+$cd /home/your_username
+
+# Open bash_profile
+$vi .bash_profile
+
+# Add the following aliases to your ``.bash_profile`` file
+alias dv="dataviewer.py "
+alias fv="figview.py"
+alias gg="gautoedit.py -n6"
+
+# Close editor
+:wq
+
+# Update your .bash_profile
+$source .bash_profile
+
+```
+## Step 6:
+- Get CODAS Mercurial Components
+
+**On Terminal:**
+```python
+
+# Create directories and give permission to users
+$sudo mkdir /home/adcpcode
+$sudo chown youruser:yourgroup /home/adcpcode
+
+# Create subdirectories
+$mkdir /home/adcpcode/programs  # This for mercurial repositories
+$mkdir /home/adcpcode/topog     # For topography plots 
+
+# Navigate to programs
+$cd /home/adcpcode/programs
+
+# Clone these (4) repositories as follows:
+
+$hg clone   http://currents.soest.hawaii.edu/hg/codas3          codas3
+$hg clone   http://currents.soest.hawaii.edu/hg/pycurrents      pycurrents
+$hg clone   http://currents.soest.hawaii.edu/hg/onship          onship
+$hg clone   http://currents.soest.hawaii.edu/hg/uhdas           uhdas
+```
+## Step 7:
+- Compile CODAS and Python extension
+
+**On Terminal:**
+```python
+
+# Navite to ``codas3``
+$cd /home/adcpcode/programs/codas3
+
+# Compile and install codas3:
+$./waf configure --python_env
 ./waf build
 ./waf install
 cd ..
