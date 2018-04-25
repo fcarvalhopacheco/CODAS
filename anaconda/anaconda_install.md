@@ -12,7 +12,7 @@
 **On Terminal:**
 ```python
 # Navigate to
-$cd /home/your_username  
+`$`cd /home/your_username  
 
 # Open your bash_profile
 $vi .bash_profile
