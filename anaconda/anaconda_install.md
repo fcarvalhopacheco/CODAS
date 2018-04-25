@@ -4,7 +4,38 @@
 
 ## Step 1:
 Download [Anaconda 3.6](https://www.anaconda.com/download/#linux)
-Follow instructions [here-Anaconda]( https://docs.anaconda.com/anaconda/install/linux)
+
+Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
+
+Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
+
+On Terminal:
+```
+cd /home/your_username #type whoami on terminal if you dont know who you are =) 
+
+vi .bash_profile
+
+:wq #to close the editor
+
+```
+You should be able to see something like
+```
+# added by Anaconda3 installer
+export PATH="/home/your_username/anaconda3/bin:$PATH"
+
+```
+
+If not, check on:
+```
+vi .bashrc
+```
+Go to last line by typing:
+```
+Shift+GG
+```
+
+
+
 
 ## Step 2:
 Create a Python 2.7 environment in your anaconda
@@ -19,21 +50,6 @@ Activate Python 2.7
   $source activate py27
   ```
 
-
-
-
-
-
-# FIXXXX ME
-
-
-# (1) Anaconda
----------------------------------------------
-# Download anaconda 3.6 from https://www.anaconda.com/download/#linux
-# Follow instruction from https://docs.anaconda.com/anaconda/install/linux 
----------------------------------------------
-# Create a Python 2.7 on Anaconda
-conda create -n py27 python=2.7 anaconda
 
 source activate py27  # to use spyder 2.7
 ----------------------------------------------
