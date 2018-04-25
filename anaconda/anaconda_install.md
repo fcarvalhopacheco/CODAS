@@ -10,9 +10,9 @@
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
 
 **On Terminal:**
-```python
-# Navigate to
-`$`cd /home/your_username  
+```
+`# Navigate to`
+$cd /home/your_username  
 
 # Open your bash_profile
 $vi .bash_profile
