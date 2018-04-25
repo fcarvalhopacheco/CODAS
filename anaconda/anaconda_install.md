@@ -3,34 +3,37 @@
 
 
 ## Step 1:
-Download [Anaconda 3.6](https://www.anaconda.com/download/#linux)
+- Download [Anaconda 3.6](https://www.anaconda.com/download/#linux)
 
-Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
+- Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
 
-Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
+- Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
 
-On Terminal:
-```
-cd /home/your_username #type whoami on terminal if you dont know who you are =) 
+**On Terminal:**
+```python
+# Navigate to
+cd /home/your_username  
 
+# Open your bash_profile
 vi .bash_profile
 
-:wq #to close the editor
+# close the editor
+:wq
 
 ```
 You should be able to see something like
-```
+```python
 # added by Anaconda3 installer
 export PATH="/home/your_username/anaconda3/bin:$PATH"
 
 ```
 
 If not, check on:
-```
+```python
 vi .bashrc
 ```
 Go to last line by typing:
-```
+```python
 Shift+GG
 ```
 
