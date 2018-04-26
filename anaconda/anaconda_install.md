@@ -1,11 +1,11 @@
 # Intalling CODAS software on Anaconda
 - I m using Ubuntu 16.04
-- This is a quick help !Please, for full explanation, visit [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html)
+- **Please**, for full explanation, visit [UHDAS+CODAS website](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html)
 
 ## Step 1:
 - [Download Python 3.6 Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
 
-- Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
+  + Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
 
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
     
@@ -27,15 +27,15 @@
     :wq
     ```
 
-  + If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
-  + **Open** bashrc:
-    ```
-    $vi .bashrc
-    ```
-  + **Move cursor** to the end of file:
-    ```
-    Shift + g
-    ```
+  + **OBS:**If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
+    + **Open** bashrc:
+      ```
+      $vi .bashrc
+      ```
+    + **Move cursor** to the end of file:
+      ```
+      Shift + g
+      ```
 
 ## Step 2:
 
@@ -166,9 +166,9 @@
     ```
     $wget ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip
     ```
-  + **Unzip** it into /home/adcpcode/topog/etopo
+  + **Unzip** it into `/home/adcpcode/topog/etopo`
 
-    + **On terminal**,**install** unzip on ubuntu if you don't have it:
+    + **On terminal**,**install** unzip software:
       ```
       $sudo apt-get install unzip
       ```
@@ -179,18 +179,19 @@
     + **Unzip** the file:
       ```
       $unzip etopo1_for_pycurrents.zip -d /home/adcpcode/topog/etopo
-    
-      # If it's already unziped, then:
+      ```
+    + If it's already unziped, then:
+      ```
       $mv etopo1_for_pycurrents/* /home/adcpcode/topog/etopo
       ```
-  + On /home/adcpcode/topog/etopo, you should be able to see something like this:
+  + On `/home/adcpcode/topog/etopo`, you should be able to see something like this:
     ```
     etopo1_ice_g_i2.bin
     etopo1_ice_g_i2.hdr
     etopo1_ice_g_i2_s3.bin
     etopo1_ice_g_i2_s9.bin  
     ```
-> The website is showing etopo2v2c ?? I think this is an old version, assuming?
+    > The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
   + **Create** a link for topography folder:
     ```
@@ -222,7 +223,7 @@
     ```
     python topo_sub.py 
     ```
-> This will generate 2 more files for each topography folder. ** *This will take a long time!!* **
+    > This will generate 2 more files for each topography folder. ** *This will take a long time!!* **
 
     
     
