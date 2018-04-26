@@ -74,8 +74,8 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Create alias
 
 **On Terminal:**
-```alias
- # Navigate to:
+```
+# Navigate to:
  $cd /home/your_username
  
  # Open bash_profile
@@ -100,7 +100,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Get CODAS Mercurial Components
 
 **On Terminal:**
-```alias 
+```
  # Create directories and give permission to users
  $sudo mkdir /home/adcpcode
  $sudo chown youruser:yourgroup /home/adcpcode
@@ -123,7 +123,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Compile CODAS and Python extension
 
 **On Terminal:**
-```alias
+```
  # Navite to codas3
  $cd /home/adcpcode/programs/codas3
 
@@ -140,12 +140,10 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
  # Install uhdas and onship
  $cd uhdas 
- $./runsetup.py    
-```
-> This seems to be wrong on website runsetup.py insted of ./runsetup.py
-
-```alias
- $cd ..
+ $./runsetup.py    #  This seems to be wrong on website runsetup.py insted of ./runsetup.py
+ $ cd..
+ 
+ # Install onship
  $cd onship
  $python setup.py build
  $python setup.py install
@@ -155,10 +153,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 ## Step 8:
 - Install Topography
 
-- Download [here](ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
-
-[here](ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
-(ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
+- Download [here]( ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
 
 - Unzip it into /home/adcpcode/topog/etopo
 
