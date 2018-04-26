@@ -1,7 +1,6 @@
 # Installing CODAS software on Anaconda3
 - I am using Ubuntu 16.04
 
-
 ## Step 1:
 - Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
 
@@ -10,30 +9,30 @@
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
 
 **On Terminal:**
-```
-# Navigate to
-$cd /home/your_username  
+```alias
+ # Navigate to
+ $cd /home/your_username  
 
-# Open your bash_profile
-$vi .bash_profile
+ # Open your bash_profile
+ $vi .bash_profile
 ```
 You should be able to see something like
 
 ```
-# added by Anaconda3 installer
-export PATH="/home/your_username/anaconda3/bin:$PATH"
+ # added by Anaconda3 installer
+ export PATH="/home/your_username/anaconda3/bin:$PATH"
 
-# Close the editor
-:wq
+ # Close the editor
+ :wq
 ```
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
 ```
-# Open bashrc
-$vi .bashrc
+ # Open bashrc
+ $vi .bashrc
 
-# And type
-Shift+GG
+ # And type
+ Shift+GG
 ```
 
 ## Step 2:
@@ -41,11 +40,11 @@ Shift+GG
 
 **On Terminal:**
 ```
-# Create py27
-$conda create -n py27 python=2.7 anaconda
+ # Create py27
+ $conda create -n py27 python=2.7 anaconda
 
-# Activate Python 2.7
-$source activate py27
+ # Activate Python 2.7
+ $source activate py27
 ```
 
 ## Step 3:
@@ -53,47 +52,47 @@ $source activate py27
 
 **On Terminal:**
 ```
-# Installing 4 packages
+ # Installing 4 packages
 
-$conda install basemap          # If conflict:  conda install anaconda=custom basemap 
-$conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forge netcdf4   
-$conda install wxpython=3       # For most recent version: conda install wxpython
-$conda install future
+ $conda install basemap          # If conflict:  conda install anaconda=custom basemap 
+ $conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forge netcdf4   
+ $conda install wxpython=3       # For most recent version: conda install wxpython
+ $conda install future
 ```
-
+---
 ## Step 4:
 - Install Mercurial package 
 
 **On Terminal:**
 ```
-$sudo apt-get install mercurial
+ $sudo apt-get install mercurial
 ```
 > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
-
+---
 ## Step 5:
 - Create alias
 
 **On Terminal:**
 ```
-# Navigate to:
-$cd /home/your_username
+ # Navigate to:
+ $cd /home/your_username
 
-# Open bash_profile
-$vi .bash_profile
+ # Open bash_profile
+ $vi .bash_profile
 
-# Add the following aliases to your .bash_profile file
-alias dv="dataviewer.py "
-alias fv="figview.py"
-alias gg="gautoedit.py -n6"
+ # Add the following aliases to your .bash_profile file
+ alias dv="dataviewer.py "
+ alias fv="figview.py"
+ alias gg="gautoedit.py -n6"
 
-# Close editor
-:wq
+ # Close editor
+ :wq
 
-# Update your .bash_profile
-$source .bash_profile
+ # Update your .bash_profile
+ $source .bash_profile
 
-# activate python 2.7 again
-$source activate py27 
+ # activate python 2.7 again
+ $source activate py27 
 ```
 
 ## Step 6:
@@ -101,22 +100,22 @@ $source activate py27
 
 **On Terminal:**
 ```
-# Create directories and give permission to users
-$sudo mkdir /home/adcpcode
-$sudo chown youruser:yourgroup /home/adcpcode
+ # Create directories and give permission to users
+ $sudo mkdir /home/adcpcode
+ $sudo chown youruser:yourgroup /home/adcpcode
 
-# Create subdirectories
-$mkdir /home/adcpcode/programs  # This is for mercurial repositories
-$mkdir /home/adcpcode/topog     # For topography plots 
+ # Create subdirectories
+ $mkdir /home/adcpcode/programs  # This is for mercurial repositories
+ $mkdir /home/adcpcode/topog     # For topography plots 
 
-# Navigate to programs
-$cd /home/adcpcode/programs
+ # Navigate to programs
+ $cd /home/adcpcode/programs
 
-# Clone these (4) repositories as follows:
-$hg clone   http://currents.soest.hawaii.edu/hg/codas3          codas3
-$hg clone   http://currents.soest.hawaii.edu/hg/pycurrents      pycurrents
-$hg clone   http://currents.soest.hawaii.edu/hg/onship          onship
-$hg clone   http://currents.soest.hawaii.edu/hg/uhdas           uhdas
+ # Clone these (4) repositories as follows:
+ $hg clone   http://currents.soest.hawaii.edu/hg/codas3          codas3
+ $hg clone   http://currents.soest.hawaii.edu/hg/pycurrents      pycurrents
+ $hg clone   http://currents.soest.hawaii.edu/hg/onship          onship
+ $hg clone   http://currents.soest.hawaii.edu/hg/uhdas           uhdas
 ```
 
 ## Step 7:
@@ -124,32 +123,32 @@ $hg clone   http://currents.soest.hawaii.edu/hg/uhdas           uhdas
 
 **On Terminal:**
 ```
-# Navite to codas3
-$cd /home/adcpcode/programs/codas3
+ # Navite to codas3
+ $cd /home/adcpcode/programs/codas3
 
-# Compile and install codas3:
-$./waf configure --python_env
-$./waf build
-$./waf install
-$cd ..
+ # Compile and install codas3:
+ $./waf configure --python_env
+ $./waf build
+ $./waf install
+ $cd ..
 
-# For pycurrents
-$cd pycurrents
-$./runsetup.py
-$cd ..
+ # For pycurrents
+ $cd pycurrents
+ $./runsetup.py
+ $cd ..
 
-# Install uhdas and onship
-$cd uhdas 
-$./runsetup.py    
+ # Install uhdas and onship
+ $cd uhdas 
+ $./runsetup.py    
 ```
 > This seems to be wrong on website runsetup.py insted of ./runsetup.py
 
 ```
-$cd ..
-$cd onship
-$python setup.py build
-$python setup.py install
-$cd..
+ $cd ..
+ $cd onship
+ $python setup.py build
+ $python setup.py install
+ $cd..
 ```
 
 ## Step 8:
@@ -161,6 +160,8 @@ $cd..
 
 > The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
+
+```
 
 
 # For Anaconda3
@@ -185,3 +186,5 @@ mkdir sstopo # you should see etopo and sstopo in topog
 conda create -n py36 python=3.6 anaconda
 
 source activate py36
+
+```
