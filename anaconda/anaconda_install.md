@@ -176,7 +176,11 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $cd ~/anaconda3
     $ln -s /home/adcpcode/topog .
 
-- Download Smith Sandwell Topography V18.1 [here] <ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img>
+- Download Smith Sandwell Topography V18.1 [here] 
+
+<a href="ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img">here</a>
+
+
 
 **On Terminal:**
 
@@ -195,7 +199,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 	
     # Run:
     python topo_sub.py 
-   > This will generate 2 more files for each topography folder. ** *This will take a long time!!* **
+    > This will generate 2 more files for each topography folder. ** *This will take a long time!!* **
 
     
     
