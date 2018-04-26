@@ -1,4 +1,4 @@
-# Intalling CODAS software on Anaconda4
+# Intalling CODAS software on Anaconda
 - I m using Ubuntu 16.04
 
 ## Step 1:
