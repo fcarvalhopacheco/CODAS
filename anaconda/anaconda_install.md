@@ -1,4 +1,4 @@
-# Installing CODAS software on Anaconda3
+# Installing CODAS software on Anaconda4
 - I am using Ubuntu 16.04
 
 ## Step 1:
@@ -162,10 +162,11 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 > The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
 
-```
+
 
 
 # For Anaconda3
+```
 cd
 cd anaconda3
 ln -s /home/adcpcode/topog 
