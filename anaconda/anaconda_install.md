@@ -1,5 +1,6 @@
 # Intalling CODAS software on Anaconda4
 - I m using Ubuntu 16.04
+----
 
 ## Step 1:
 - Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
@@ -9,22 +10,21 @@
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
 
 **On Terminal:**
-```alias
- # Navigate to
- $cd /home/your_username  
+   
+    # Navigate to
+    $cd /home/your_username  
 
- # Open your bash_profile
- $vi .bash_profile
-```
+    # Open your bash_profile
+    $vi .bash_profile
+
 You should be able to see something like
 
-```alias
- # added by Anaconda3 installer
- export PATH="/home/your_username/anaconda3/bin:$PATH"
+    # added by Anaconda3 installer
+    export PATH="/home/your_username/anaconda3/bin:$PATH"
 
- # Close the editor
- :wq
-```
+    # Close the editor
+    :wq
+
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
 ```alias
