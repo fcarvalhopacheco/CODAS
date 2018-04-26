@@ -57,7 +57,7 @@
     ```
     $conda install basemap          # If conflict:  conda install anaconda=custom basemap 
     $conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forge netcdf4   
-    $conda install wxpython=3       # For most recent version: conda install wxpython
+    $conda install wxpython=3       
     $conda install future
     ```
 
