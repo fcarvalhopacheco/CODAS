@@ -1,6 +1,6 @@
 # ``CODAS`` ADCP PROCESSING INSTALLATION 
 
-This is a tutorial to simplify and help with the CODAS installation available [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/index.html)
+This is a guide to complement and/or simplify some steps for CODAS installation available [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/index.html)
 
 
 >*A **CODAS** (Common Oceanographic Data Access System) database is a way to store and access oceanographic data. CODAS was developed in the late 1980's as a portable, self-describing format for oceanographic data, with emphasis on processed ADCP data.*
