@@ -18,7 +18,6 @@ $cd /home/your_username
 $vi .bash_profile
 ```
 You should be able to see something like
-
 ```
 # added by Anaconda3 installer
 export PATH="/home/your_username/anaconda3/bin:$PATH"
@@ -157,8 +156,11 @@ $cd..
 
 ## Step 8:
 - Installing Topography
+
 - Download [here](ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
+
 - Unzip it into /home/adcpcode/topog/etopo
+
 > The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
 
