@@ -226,16 +226,16 @@
     > This will generate more files for each topography folder. ** *This will take a long time!!* **
     
     + On `~/home/adcpcode/topog`, you should be able to see: 
-    ```    
-    topog/sstopo/topo_18.1.img
-    topog/sstopo/topo_18.1s3.img
-    topog/sstopo/topo_18.1s9.img
+      ```    
+      topog/sstopo/topo_18.1.img
+      topog/sstopo/topo_18.1s3.img
+      topog/sstopo/topo_18.1s9.img
 
-    topog/etopo/etopo1_ice_g_i2.bin
-    topog/etopo/etopo1_ice_g_i2.hdr
-    topog/etopo/etopo1_ice_g_i2_s3.bin
-    topog/etopo/etopo1_ice_g_i2_s9.bin
-    ```
+      topog/etopo/etopo1_ice_g_i2.bin
+      topog/etopo/etopo1_ice_g_i2.hdr
+      topog/etopo/etopo1_ice_g_i2_s3.bin
+      topog/etopo/etopo1_ice_g_i2_s9.bin
+      ```
     
     
 
