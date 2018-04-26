@@ -65,10 +65,10 @@
 - Install Mercurial package 
 
   + **On terminal**, install the software
-   ```
-   $sudo apt-get install mercurial
-   ```
-   > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
+    ```
+    $sudo apt-get install mercurial
+    ```
+    > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
 
 ## Step 5:
 - Create alias
