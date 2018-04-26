@@ -3,7 +3,7 @@
 - This is a quick help ! visit [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) for full explanation
 
 ## Step 1:
-- Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
+[1.1](#1.1) Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
 
 - Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
 
