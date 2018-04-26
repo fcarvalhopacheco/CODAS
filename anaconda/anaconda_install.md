@@ -139,7 +139,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $python setup.py install
     $cd..
 
-## Step 8:
+## Step 8 
 - Install Topography
 
 - Download [here]( ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
@@ -164,8 +164,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     etopo1_ice_g_i2.bin
     etopo1_ice_g_i2.hdr
     etopo1_ice_g_i2_s3.bin
-    etopo1_ice_g_i2_s9.bin
-> The website is showing etopo2v2c ?? I think this is an old version, assuming?
+    etopo1_ice_g_i2_s9.bin  % The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
     # Create a link for topography folder 
     $cd ~/anaconda3
