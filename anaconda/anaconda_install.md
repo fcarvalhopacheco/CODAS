@@ -72,8 +72,9 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
 ## Step 5:
 - Create alias
-**On Terminal:**
 
+**On Terminal:**
+```alias
  # Navigate to:
  $cd /home/your_username
 
@@ -94,12 +95,11 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
  # activate python 2.7 again
  $source activate py27 
 
-
 ## Step 6:
 - Get CODAS Mercurial Components
 
 **On Terminal:**
-```alias
+```alias 
  # Create directories and give permission to users
  $sudo mkdir /home/adcpcode
  $sudo chown youruser:yourgroup /home/adcpcode
