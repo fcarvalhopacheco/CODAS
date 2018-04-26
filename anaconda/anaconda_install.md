@@ -11,29 +11,30 @@
     
     * **On Terminal** Navigate to :
     
-    $cd /home/your_username  
+    `$cd /home/your_username` 
 
     * Open your bash_profile:
 
-    $vi .bash_profile
+    `$vi .bash_profile`
 
     * You should be able to see something like:
 
+    ```
     # added by Anaconda3 installer
     export PATH="/home/your_username/anaconda3/bin:$PATH"
-
+    ```
     * Close editor:
-
-    :wq
+   
+    `:wq`
 
     * If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
     * Open bashrc:
 
-    $vi .bashrc
+    `$vi .bashrc`
 
     * Move cursor to the end of file:
 
-    Shift + g
+    `Shift + g`
 
 ## Step 2:
 - Create a Python 2.7 environment in your anaconda
