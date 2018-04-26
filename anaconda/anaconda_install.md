@@ -142,11 +142,11 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 ## Step 8 
 - Install Topography
 
-- Download [here]( ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
+- Download [here] (ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
 
 - Unzip it into /home/adcpcode/topog/etopo
 
-**On Terminal**
+**On Terminal:**
    
     # Install unzip on ubuntu if you don't have it
     $sudo apt-get install unzip
@@ -171,6 +171,8 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $ln -s /home/adcpcode/topog .
 
 - Download Smith Sandwell Topography V18.1 [here](ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img)
+
+**On Terminal:**
 
     # Navigate to
     $cd ~/Downloads
