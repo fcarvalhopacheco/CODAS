@@ -8,31 +8,31 @@
 - Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
 
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
-
- **On Terminal** Navigate to :
+    
+    * **On Terminal** Navigate to :
 
     $cd /home/your_username  
 
- Open your bash_profile:
+    * Open your bash_profile:
 
     $vi .bash_profile
 
- You should be able to see something like:
+    * You should be able to see something like:
 
     # added by Anaconda3 installer
     export PATH="/home/your_username/anaconda3/bin:$PATH"
 
- Close editor:
+    * Close editor:
 
     :wq
 
- If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
+    * If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
- Open bashrc:
+    * Open bashrc:
    
     $vi .bashrc
 
- Move cursor to the end of file:
+    * Move cursor to the end of file:
     
     Shift + g
 
