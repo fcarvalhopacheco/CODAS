@@ -18,6 +18,7 @@ $cd /home/your_username
 $vi .bash_profile
 ```
 You should be able to see something like
+
 ```
 # added by Anaconda3 installer
 export PATH="/home/your_username/anaconda3/bin:$PATH"
@@ -25,7 +26,6 @@ export PATH="/home/your_username/anaconda3/bin:$PATH"
 # Close the editor
 :wq
 ```
-
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
 ```
@@ -60,8 +60,8 @@ $conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forg
 $conda install wxpython=3       # For most recent version: conda install wxpython
 $conda install future
 ```
-## Step 4:
 
+## Step 4:
 - Install Mercurial package 
 
 **On Terminal:**
@@ -70,13 +70,10 @@ $sudo apt-get install mercurial
 ```
 > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
 
-
 ## Step 5:
-
 - Create alias
 
 **On Terminal:**
-
 ```
 # Navigate to:
 $cd /home/your_username
