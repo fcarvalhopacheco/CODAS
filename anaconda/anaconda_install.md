@@ -1,5 +1,6 @@
 # Intalling CODAS software on Anaconda
 - I m using Ubuntu 16.04
+- This is a quick help ! visit [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) for full explanation
 
 ## Step 1:
 - Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
@@ -49,6 +50,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 **On Terminal:**
 
     # Installing 4 packages
+    
     $conda install basemap          # If conflict:  conda install anaconda=custom basemap 
     $conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forge netcdf4   
     $conda install wxpython=3       # For most recent version: conda install wxpython
@@ -176,9 +178,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $cd ~/anaconda3
     $ln -s /home/adcpcode/topog .
 
-- Download Smith Sandwell Topography V18.1 [here] 
-
-<a href="ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img">here</a>
+- Download Smith Sandwell Topography V18.1 <a href="ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img"> click here</a>
 
 
 
