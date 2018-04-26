@@ -1,5 +1,5 @@
-# Installing CODAS software on Anaconda4
-- I am using Ubuntu 16.04
+# Intalling CODAS software on Anaconda4
+- I m using Ubuntu 16.04
 
 ## Step 1:
 - Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
@@ -77,7 +77,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 ```alias
  # Navigate to:
  $cd /home/your_username
-
+ 
  # Open bash_profile
  $vi .bash_profile
 
@@ -88,12 +88,13 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
  # Close editor
  :wq
-
+ 
  # Update your .bash_profile
  $source .bash_profile
 
  # activate python 2.7 again
  $source activate py27 
+```
 
 ## Step 6:
 - Get CODAS Mercurial Components
