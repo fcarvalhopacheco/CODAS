@@ -1,6 +1,6 @@
 # Intalling CODAS software on Anaconda
 - I m using Ubuntu 16.04
-- **Please**, for full explanation, visit [UHDAS+CODAS website](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html)
+- **Please** visit [UHDAS+CODAS website](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) for full explanation 
 
 ## Step 1:
 - [Download Python 3.6 Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
@@ -27,7 +27,7 @@
     :wq
     ```
 
-  + **OBS:**If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
+  * **OBS:** If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
     + **Open** bashrc:
       ```
       $vi .bashrc
