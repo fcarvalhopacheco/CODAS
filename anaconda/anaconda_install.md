@@ -140,6 +140,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $cd..
 
 ## Step 8 
+
 - Install Topography
 
 - Download [here] (ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
@@ -183,8 +184,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     # Move smith-sandwell file topo18.1 into the sstopo folder
     $mv topo_18.1.img /home/adcpcode/topog/sstopo
 
-- Installing SSTOPO v18.1
-
+    # Installing SSTOPO v18.1
     # Navigate to:
     $cd /home/adcpcode/programs/pycurrents/scripts
 	
