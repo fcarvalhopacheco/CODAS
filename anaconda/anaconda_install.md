@@ -18,7 +18,7 @@
 ```
 You should be able to see something like
 
-```
+```alias
  # added by Anaconda3 installer
  export PATH="/home/your_username/anaconda3/bin:$PATH"
 
@@ -27,7 +27,7 @@ You should be able to see something like
 ```
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
-```
+```alias
  # Open bashrc
  $vi .bashrc
 
@@ -39,7 +39,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Create a Python 2.7 environment in your anaconda
 
 **On Terminal:**
-```
+```alias
  # Create py27
  $conda create -n py27 python=2.7 anaconda
 
@@ -51,7 +51,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Install Anaconda packages 
 
 **On Terminal:**
-```
+```alias
  # Installing 4 packages
 
  $conda install basemap          # If conflict:  conda install anaconda=custom basemap 
@@ -59,21 +59,22 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
  $conda install wxpython=3       # For most recent version: conda install wxpython
  $conda install future
 ```
----
+
+
 ## Step 4:
 - Install Mercurial package 
 
 **On Terminal:**
-```
+```alias
  $sudo apt-get install mercurial
 ```
 > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
----
+
 ## Step 5:
 - Create alias
 
 **On Terminal:**
-```
+```alias
  # Navigate to:
  $cd /home/your_username
 
@@ -99,7 +100,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Get CODAS Mercurial Components
 
 **On Terminal:**
-```
+```alias
  # Create directories and give permission to users
  $sudo mkdir /home/adcpcode
  $sudo chown youruser:yourgroup /home/adcpcode
@@ -122,7 +123,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Compile CODAS and Python extension
 
 **On Terminal:**
-```
+```alias
  # Navite to codas3
  $cd /home/adcpcode/programs/codas3
 
@@ -143,7 +144,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 ```
 > This seems to be wrong on website runsetup.py insted of ./runsetup.py
 
-```
+```alias
  $cd ..
  $cd onship
  $python setup.py build
