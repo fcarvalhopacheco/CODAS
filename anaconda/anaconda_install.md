@@ -3,7 +3,7 @@
 
 
 ## Step 1:
-- Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux). But we will set up a python 2.7 environment
+- Download Python 3.6 [Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
 
 - Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
 
@@ -16,7 +16,6 @@ $cd /home/your_username
 
 # Open your bash_profile
 $vi .bash_profile
-
 ```
 You should be able to see something like
 
@@ -31,10 +30,10 @@ export PATH="/home/your_username/anaconda3/bin:$PATH"
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
 ```
-#open bashrc
+# Open bashrc
 $vi .bashrc
 
-# Type
+# And type
 Shift+GG
 ```
 
@@ -79,7 +78,7 @@ $sudo apt-get install mercurial
 
 **On Terminal:**
 ```
-# Navite to:
+# Navigate to:
 $cd /home/your_username
 
 # Open bash_profile
@@ -98,8 +97,8 @@ $source .bash_profile
 
 # activate python 2.7 again
 $source activate py27 
-
 ```
+
 ## Step 6:
 - Get CODAS Mercurial Components
 
@@ -110,7 +109,7 @@ $sudo mkdir /home/adcpcode
 $sudo chown youruser:yourgroup /home/adcpcode
 
 # Create subdirectories
-$mkdir /home/adcpcode/programs  # This for mercurial repositories
+$mkdir /home/adcpcode/programs  # This is for mercurial repositories
 $mkdir /home/adcpcode/topog     # For topography plots 
 
 # Navigate to programs
@@ -144,9 +143,11 @@ $cd ..
 # Install uhdas and onship
 $cd uhdas 
 $./runsetup.py    
->This seems to be wrong on website runsetup.py insted of ./runsetup.py
-$cd ..
+```
+> This seems to be wrong on website runsetup.py insted of ./runsetup.py
 
+```
+$cd ..
 $cd onship
 $python setup.py build
 $python setup.py install
