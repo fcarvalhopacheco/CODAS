@@ -1,6 +1,6 @@
 # Intalling CODAS software on Anaconda
 - I m using Ubuntu 16.04
-- This is a quick help ! visit [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) for full explanation
+- This is a quick help !Please, for full explanation, visit [here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html)
 
 ## Step 1:
 - [Download Python 3.6 Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 2.7 environment
@@ -9,49 +9,52 @@
 
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
     
-  + **On Terminal** Navigate to :
-    ```
++ **On Terminal**, navigate to :
+
     $cd /home/your_username 
-    ```
-  + **Open** your bash_profile:
+
++ **Open** your bash_profile:
     ```
     $vi .bash_profile
     ```
-  + You should be able to see something like:
++ You should be able to see something like:
     ```
     # added by Anaconda3 installer
     export PATH="/home/your_username/anaconda3/bin:$PATH"
     ```
-  + **Close** editor:
++ **Close** editor:
     ```
     :wq
     ```
 
-  + If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
-  + **Open** bashrc:
++ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
++ **Open** bashrc:
     ```
     $vi .bashrc
     ```
-  + **Move cursor** to the end of file:
++ **Move cursor** to the end of file:
     ```
     Shift + g
     ```
 
-## Step 2:
-- Create a Python 2.7 environment in your anaconda
 
-### On Terminal
-Create py27 environment:
-    
+## Step 2:
+
+- Create a Python 2.7 environment in your anaconda
+  
+  + **On Terminal**, create py27 environment:
+    ```
     $conda create -n py27 python=2.7 anaconda
-    
-    # Activate Python 2.7
+    ```
+  + **Activate** Python 2.7
+    ```
     $source activate py27
+    ```
 
 ## Step 3:
 - Install Anaconda packages 
 
-### On Terminal:
+  + On Terminal:
 
  Install 4 packages:
     
