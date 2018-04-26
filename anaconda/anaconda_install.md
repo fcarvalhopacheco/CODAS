@@ -76,6 +76,7 @@ $sudo apt-get install mercurial
 - Create alias
 
 **On Terminal:**
+
 ```
 # Navigate to:
 $cd /home/your_username
