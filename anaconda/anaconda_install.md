@@ -72,9 +72,8 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
 ## Step 5:
 - Create alias
-
 **On Terminal:**
-```alias
+
  # Navigate to:
  $cd /home/your_username
 
@@ -94,7 +93,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
  # activate python 2.7 again
  $source activate py27 
-```
+
 
 ## Step 6:
 - Get CODAS Mercurial Components
@@ -153,40 +152,36 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 ```
 
 ## Step 8:
-- Installing Topography
+- Install Topography
 
 - Download [here](ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
+
+[here](ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
+(ftp://currents.soest.hawaii.edu/pub/outgoing/etopo1_for_pycurrents.zip)
 
 - Unzip it into /home/adcpcode/topog/etopo
 
 > The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
-
-
-
-
-# For Anaconda3
+**On Terminal**
 ```
-cd
-cd anaconda3
-ln -s /home/adcpcode/topog 
+# Install the topography
+$cd ~/anaconda3
+$ln -s /home/adcpcode/topog 
+```
+- Update topography and smith sandwell
 
-# For local linux
-cd /usr/local
-ln -s /home/adcpcode/topog
-------------------------------------------------
-# Update topography and smith sandwell
-# download global topo 18.1 # ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img 
-# Create two directories inside topog in /home/adcpde/topog
-mkdir sstopo # you should see etopo and sstopo in topog
+- Download global topo 18.1 [here](ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img)
+
+**On Terminal**
+```
+# Navigate to
+cd /home/acpcode
+
+# Make another direcotory to update simith sandwell package 
+$mkdir sstopo 
 
 # Move smith-sandwell file topo18.1 into the sstopo folder
-
-
---------------------------------------------- 
-# Create a Python 3.5 env other than the root on Anaconda
-conda create -n py36 python=3.6 anaconda
-
-source activate py36
-
+$cd ~/Downloads
+$mv topo_18.1.img /home/adcpcode/sstopo
 ```
