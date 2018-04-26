@@ -9,6 +9,7 @@
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
 
 **On Terminal:**
+   
     # Navigate to
     $cd /home/your_username  
 
@@ -25,18 +26,17 @@ You should be able to see something like
 
 If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
 
-
     # Open bashrc
     $vi .bashrc
 
     # And type
     Shift+GG
 
-
 ## Step 2:
 - Create a Python 2.7 environment in your anaconda
 
 **On Terminal:**
+
     # Create py27
     $conda create -n py27 python=2.7 anaconda
     
@@ -47,6 +47,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Install Anaconda packages 
 
 **On Terminal:**
+
     # Installing 4 packages
     $conda install basemap          # If conflict:  conda install anaconda=custom basemap 
     $conda install netcdf4          # For Ubuntu 14.04:  conda install -c conda-forge netcdf4   
@@ -57,13 +58,15 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Install Mercurial package 
 
 **On Terminal:**
+
     $sudo apt-get install mercurial
->> The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
+   > The link in the [website]( https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) seems to be broken
 
 ## Step 5:
 - Create alias
 
 **On Terminal:**
+   
     # Navigate to:
     $cd /home/your_username
  
@@ -110,6 +113,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Compile CODAS and Python extension
 
 **On Terminal:**
+   
     # Navite to codas3
     $cd /home/adcpcode/programs/codas3
 
@@ -143,6 +147,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 - Unzip it into /home/adcpcode/topog/etopo
 
 **On Terminal**
+   
     # Install unzip on ubuntu if you don't have it
     $sudo apt-get install unzip
     
@@ -160,7 +165,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     etopo1_ice_g_i2.hdr
     etopo1_ice_g_i2_s3.bin
     etopo1_ice_g_i2_s9.bin
->> The website is showing etopo2v2c ?? I think this is an old version, assuming?
+> The website is showing etopo2v2c ?? I think this is an old version, assuming?
 
     # Create a link for topography folder 
     $cd ~/anaconda3
@@ -179,7 +184,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
 
 - Installing SSTOPO v18.1
 
-    # Navigato to:
+    # Navigate to:
     $cd /home/adcpcode/programs/pycurrents/scripts
 	
     # Run:
