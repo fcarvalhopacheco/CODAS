@@ -9,7 +9,7 @@
 
 - Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
     
-+ **On Terminal**, navigate to :
+  + **On Terminal**, navigate to :
 
     $cd /home/your_username 
 
