@@ -178,7 +178,7 @@ If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.
     $cd ~/anaconda3
     $ln -s /home/adcpcode/topog .
 
-- Download Smith Sandwell Topography V18.1 <a href="ftp://topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img"> click here</a>
+- Download Smith Sandwell Topography V18.1 <a href="ftp://adcpproc:codas3@topex.ucsd.edu/pub/global_topo_1min/topo_18.1.img"> click here</a>
 
 
 
