@@ -352,6 +352,7 @@
     $ dv    # this is the alias for dataviewer.py created during step 5
     ```
 
+[x] - DONE! HAPPY DAYS ...
 
 
 
