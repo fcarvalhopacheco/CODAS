@@ -307,8 +307,51 @@
       topog/etopo/etopo1_ice_g_i2_s9.bin
       ```
     
-    
+## Step 9 
 
+- test the CODAS Python installation
+
+  + **On terminal**,**download** the following zips:
+
+    ```
+    $wget https://currents.soest.hawaii.edu/docs/zipped/adcp_doc.zip -P ~/Downloads
+    $wget https://currents.soest.hawaii.edu/docs/zipped/qpydemos_proc.zip -P ~/Downloads
+    $wget https://currents.soest.hawaii.edu/docs/zipped/qpydemos_uhdasdata.zip -P ~/Downloads
+    $wget https://currents.soest.hawaii.edu/docs/zipped/qpydemos_vmdasdata.zip -P ~/Downloads
+    ```
+  + **Unzip** it into `/home/adcpcode/programs/adcp_doc`
+
+    + **On terminal**,**navigate** to your Download folder:
+
+      ```
+      $cd ~/Downloads
+      ```
+
+    + **Unzip** the folders:
+
+      ```
+      $unzip adcp_doc.zip  -d /home/adcpcode/programs/adcp_doc           # some documentations
+      $unzip qpydemos_proc.zip  -d /home/adcpcode/programs/adcp_doc      # demo processing
+      $unzip qpydemos_uhdasdata.zip -d /home/adcpcode/programs/adcp_doc  # demo data
+      $unzip qpydemos_vmdasdata.zip -d /home/adcpcode/programs/adcp_doc  # demo data
+      ```
+
+  + **Navigate** to post processing demo cruise directory:
+    
+    ```
+    $cd /home/adcpcode/programs/adcp_doc/qpy_demos/adcp_pyproc/km1001c_postproc/os38nb	
+    ```
+  + **Look** at the figures by typing:
+  
+    ```
+    $ fv          # this is the alias for figview.py created during step 5
+    ```
+
+  + **Look** at the data by typing:
+  
+    ```
+    $dv		  # this is the alias for dataviewer.py created during step 5
+    ```
 
 
 
