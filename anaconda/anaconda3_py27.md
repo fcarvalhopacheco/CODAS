@@ -183,7 +183,6 @@
     $cd pycurrents
     $./runsetup.py
     $cd ..
-
     ```
 
   + **Install** uhdas and onship:
@@ -192,8 +191,8 @@
     $cd uhdas 
     $./runsetup.py    #  This seems to be wrong on website runsetup.py insted of ./runsetup.py
     $ cd..
-
     ```
+
   + **Do** the same for onship:
 
     ```
@@ -321,7 +320,7 @@
     ```
   + **Unzip** it into `/home/adcpcode/programs/adcp_doc`
 
-    + **On terminal**,**navigate** to your Download folder:
+    + **On terminal**, **navigate** to your download folder:
 
       ```
       $cd ~/Downloads
@@ -330,7 +329,7 @@
     + **Unzip** the folders:
 
       ```
-      $unzip adcp_doc.zip  -d /home/adcpcode/programs/adcp_doc           # some documentations
+      $unzip adcp_doc.zip  -d /home/adcpcode/programs/adcp_doc           # some documentation
       $unzip qpydemos_proc.zip  -d /home/adcpcode/programs/adcp_doc      # demo processing
       $unzip qpydemos_uhdasdata.zip -d /home/adcpcode/programs/adcp_doc  # demo data
       $unzip qpydemos_vmdasdata.zip -d /home/adcpcode/programs/adcp_doc  # demo data
@@ -344,13 +343,13 @@
   + **Look** at the figures by typing:
   
     ```
-    $ fv          # this is the alias for figview.py created during step 5
+    $ fv    # this is the alias for figview.py created during step 5
     ```
 
   + **Look** at the data by typing:
   
     ```
-    $dv		  # this is the alias for dataviewer.py created during step 5
+    $dv    # this is the alias for dataviewer.py created during step 5
     ```
 
 
