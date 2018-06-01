@@ -1,4 +1,4 @@
-# ``CODAS`` ADCP PROCESSING INSTALLATION 
+# ``CODAS`` ADCP PROCESSING GUIDE
 
 This is a guide to complement and/or simplify some steps required to install [CODAS software](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/index.html)
 
