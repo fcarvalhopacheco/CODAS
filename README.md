@@ -16,7 +16,14 @@ This is a guide to complement and/or simplify some steps required to install [CO
 
 
 ## Installation Options:
++ NEW AND PRACTICAL WAY (>2020)
+- [Virtualbox]
+
+
++OLD (2018)
 - [Ubuntu - Anaconda3 - Python 2.7 Environment](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/anaconda/anaconda3_py27.md)
 
 - [Ubuntu - Anaconda3 - Python 3.6 Environment](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/anaconda/anaconda3_py36.md)
+
+
 
