@@ -16,11 +16,11 @@ This is a guide to complement and/or simplify some steps required to install [CO
 
 
 ## Installation Options:
-** Recommended/Easier/Safer ** 
+**Recommended/Easier/Safer** 
 - [Virtualbox](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/virtual_computer/index.html)
 
 
-** Longer/Tricky **
+**Harder/Tricky**
 - [Ubuntu - Anaconda3 - Python 2.7 Environment](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/anaconda/anaconda3_py27.md)
 
 - [Ubuntu - Anaconda3 - Python 3.6 Environment](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/anaconda/anaconda3_py36.md)
