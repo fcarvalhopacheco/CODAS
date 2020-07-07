@@ -11,6 +11,7 @@ This is a guide to complement and/or simplify some steps required to install [CO
 
 ## For detailed  information, please visit:
 - [Currents Group at the University of Hawaii](https://currents.soest.hawaii.edu/home/)
+
 - [UHDAS+CODAS Documentation](https://currents.soest.hawaii.edu/docs/adcp_doc/)
 
 
