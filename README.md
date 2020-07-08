@@ -17,7 +17,7 @@ This is a guide to complement and/or simplify some steps required to install [CO
 
 ## Installation Options:
 
-**(Recommended)/Easier/Safer** 
+**Recommended** 
 
 - [Virtualbox](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/virtual_computer/index.html)
 
