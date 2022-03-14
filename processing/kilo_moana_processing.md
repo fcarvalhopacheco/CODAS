@@ -9,49 +9,31 @@ The R/V Kilo Moana is equipped with two ADCP systems.  An RD Instruments Ocean S
 A further step is then undertaken applying small heading corrections to the velocity data, trimming unnecessary data from the beginning and ends of the cruise followed by a visual inspection of the final dataset.  
 
 
-## Step 1:
-- [Download Python 3.6 Anaconda](https://www.anaconda.com/download/#linux).We will set up a python 3.6 environment this time
+## Processing Overview:
 
-  + Follow instructions [here]( https://docs.anaconda.com/anaconda/install/linux)
-  + If you have already installed the anaconda, **GO to STEP 2**, otherwise keep following the instructions:
+- Shipboard data is taken from OTG and given to the Chief Scientist after each cruise.
+Unprocessed ADCP is packaged in 4 directories (gbin, proc, raw, and rbin) in 
+`/home/malino5/hot/###/underway`.
 
-- Check if anaconda installer have put a ``anaconda/bin`` subdirectory in your ``$PATH`` environment
-    
-  + **On terminal**, navigate to :
-  
-    ```
-    $cd /home/your_username 
-    ```
- 
-  + **Open** your bash_profile:
+- Post-cruise processing of the shipboard adcp data can be done from virtual box.
+[Please check VBbox installation here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/virtual_computer/index.html)
 
-    ```
-    $vi .bash_profile
-    ```
+## 1. Setup Directories
 
-  + You should be able to see something like:
+> Navigate to your Shipboard ADCP data that contains the following folders:
 
-    ```
-    # added by Anaconda3 installer
-    export PATH="/home/your_username/anaconda3/bin:$PATH"
-    ```
+```
+/gbin
+/proc
+/raw
+/rbin
+/reports
+```
 
-  + **Close** editor:
+- For HOT processing
 
-    ```
-    :wq
-    ```
++ **On terminal**, connect to `HELU` and navigate to :
 
-  * **OBS:** If you can't find the ``$PATH`` on ``bash_profile``, check at the end of the ``.bashrc`` file:
-
-    + **Open** bashrc:
-
-      ```
-      $vi .bashrc
-      ```
-
-    + **Move cursor** to the end of file:
-      ```
-      Shift + g
-      ```
-
+```
+$cd `/export/malino5/hot/####/underway/km###-ADCP-Data` 
+```
