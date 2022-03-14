@@ -13,7 +13,7 @@ A further step is then undertaken applying small heading corrections to the velo
 
 - Shipboard data is taken from OTG and given to the Chief Scientist after each cruise.
 Unprocessed ADCP is packaged in 4 directories (gbin, proc, raw, and rbin) in 
-`/home/malino5/hot/###/underway`.
+`/export/malino5/hot/####/underway/km###-ADCP-Data`
 
 - Post-cruise processing of the shipboard adcp data can be done from virtual box.
 [Please check VBbox installation here](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/virtual_computer/index.html)
@@ -22,18 +22,21 @@ Unprocessed ADCP is packaged in 4 directories (gbin, proc, raw, and rbin) in
 
 > Navigate to your Shipboard ADCP data that contains the following folders:
 
-```
-/gbin
-/proc
-/raw
-/rbin
-/reports
-```
+    ```
+    /gbin
+    /proc
+    /raw
+    /rbin
+    /reports
+    ```
 
-- For HOT processing
+### For HOT processing
 
-+ **On terminal**, connect to `HELU` and navigate to :
+    + **On terminal**, connect to `HELU` and navigate to :
 
-```
-$cd `/export/malino5/hot/####/underway/km###-ADCP-Data` 
-```
+    ```
+    $cd `/export/malino5/hot/####/underway/km###-ADCP-Data` 
+    $cd /proc
+    ```
+    + In this folder, should be the different directories from each type of ADCP installed on the ship (WH300, OS75bb, OS75nb etc). Copy all folders into new folder in `/home/helu/science/HOT/data/shipadcp` 
+    
