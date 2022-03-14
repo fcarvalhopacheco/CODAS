@@ -30,13 +30,20 @@ Unprocessed ADCP is packaged in 4 directories (gbin, proc, raw, and rbin) in
 /reports
 ```
 
-### For HOT processing
+### 1.1 For HOT processing
 
 + **On terminal**, connect to `HELU` and navigate to :
 
-```
-$cd `/export/malino5/hot/####/underway/km###-ADCP-Data` 
+```sh
+$cd /export/malino5/hot/####/underway/km###-ADCP-Data
 $cd /proc
 ```
+
 + In this folder, should be the different directories from each type of ADCP installed on the ship (WH300, OS75bb, OS75nb etc). Copy all folders into new folder in `/home/helu/science/HOT/data/shipadcp` 
-    
+
+```sh
+$cp –a proc /science/hot/data/shipadcp/hot<cruise_num>_proc/
+```
+> NOTE: While the data are not processed we use the notation ‘_proc’ on the cruise directory.  When finished the directory is renamed and a link from hot/adcp is made.
+
+
