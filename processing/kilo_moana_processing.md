@@ -30,13 +30,16 @@ Unprocessed ADCP is packaged in 4 directories (gbin, proc, raw, and rbin) in
 /reports
 ```
 
-### 1.1 For HOT processing
+### 1.1 Directories for HOT processing
 
 + **On terminal**, connect to `HELU` and navigate to :
 
 ```sh
-$cd /export/malino5/hot/####/underway/km###-ADCP-Data
-$cd /proc
+$cd /export/malino5/hot/$$$$/underway/km$$$-ADCP-Data  $$$ = cruise_number
+```
+
+```sh
+cd /proc
 ```
 
 + In this folder, should be the different directories from each type of ADCP installed on the ship (WH300, OS75bb, OS75nb etc). Copy all folders into new folder in `/home/helu/science/HOT/data/shipadcp` 
@@ -44,6 +47,116 @@ $cd /proc
 ```sh
 $cp –a proc /science/hot/data/shipadcp/hot<cruise_num>_proc/
 ```
-> NOTE: While the data are not processed we use the notation ‘_proc’ on the cruise directory.  When finished the directory is renamed and a link from hot/adcp is made.
+> NOTE: While the data are not processed we use the notation `_proc` on the cruise directory. 
+When finished the directory is renamed and a link from hot/adcp is made.
 
++ Copy previous cruises' ADCP notes
+
+> Navigate to a previously processed cruise  and copy over the `**_notes_wh300.txt` (and/or other ADCP’s) into the unprocessed cruise directory. Open the notes with the text editor (double click .txt file in the file explorer). This file contains the calibration commands entered to perform ADCP calibrations, and since this .txt file will eventually be combined with another .txt file and sent to the UH Currents group, it’s best to use it as a guide for processing. Edit the commands in the .txt file and then copy and paste them into the helu terminal; this will allow future users to track how the calibration was performed. 
+
+
+### 1.2 Directories if you are using you own processing computer with VBox
+
++ On your local machine, create a shared folder to be used
+for shipboard adcp processing.
+
+```
+# Change <codas_processing_path> and <cruise_name> with your own folder names
+$mkdir /Users/Shared/<codas_processing_path>/<cruise_name.orig>
+$mkdir /Users/Shared/<codas_processing_path>/<cruise_name_proc>
+```
++ Navigate to `<cruise_name.orig>` folder
+
+```
+$cd /Users/Shared/<codas_processing_path>/<cruise_name.orig>
+```
+
++ Copy all unprocessed cruise directories onto .orig folder
+
+```
+# change <user_name>, <server_address>, <remote_path_to_shipadcp_data>,  <local_path4_processing>
+$rsync -avzh <user_name>@<server_address>:/<remote_path_shipadco_data>.orig <local_path4_processing> 
+```
+
++ Copy all download data onto `_proc` folder
+
+```
+$cp -r  /Users/Shared/<codas_processing_path>/<cruise_name.orig>/ /Users/Shared/<codas_processing_path>/<cruise_name_proc>/
+```
+
++ Copy previous cruises' ADCP notes
+
+> Navigate to a previously processed cruise  and copy over the `**_notes_wh300.txt` (and/or other ADCP’s) into the unprocessed cruise directory. Open the notes with the text editor (double click .txt file in the file explorer). This file contains the calibration commands entered to perform ADCP calibrations, and since this .txt file will eventually be combined with another .txt file and sent to the UH Currents group, it’s best to use it as a guide for processing. Edit the commands in the .txt file and then copy and paste them into the helu terminal; this will allow future users to track how the calibration was performed. 
+
+
+## 2. Remake all the plots
+
++ Open your virtual machine and connect to the codas_bionic_xxxxxx environment
+
++ On your virtual machine terminal, navigato to shared_folder that contains
+the shipboard adcp data:
+
+```sh
+# Something similar to
+$cd /home/adcpproc/Desktop/<codas_processing_path>/<cruise_name>
+```
+
++ In the `**notes_osxx.txt` file, edit the first command under `(0) remake all
+the plots` to have the correct yearbase, then run the following command on your
+VB terminal 
+
+```sh
+$cd /home/adcpproc/Desktop/<codas_processing_path>/<cruise_name>/proc/os75nb
+
+# example for yearbase 2021
+$quick_mplplots.py –-plots2run all –-yearbase 2021
+```
+> The screen should fill with 11 plots. 
+
+
+## 3. Check for haps in heading correction
+
++ on your `<codas_processing_path>/<cruise_name>/proc/os75nb/`, run:
+
+```
+$figview.py cal/rotate/*.png
+```
+> Gaps will appear as red stars in the ADCP time-series plot shown. If there are gaps (typically there aren’t any), do the following:
+
+    ```sh
+    $cd ~/cal/rotate/
+    
+    # run the following command:
+    patch_hcorr.py
+    
+    ```
+> select cleaner and box filter, this will interpolate over the gaps.
+
++ Remove the earlier time-dependent heading correction:
+
+```sh
+$rotate unrotate.tmp
+```
+
++ Apply the new heading correction.
+
+```sh
+$rotate rotate_fixed.tmp
+```
+
++ Run navigation steps and inspect calibrations from original dataset
+
+```sh
+$cd ../../
+$ quick_adcp.py –-steps2rerun navsteps:calib –-auto –-datatype uhdas
+```
+
++ Check the difference between original and after patch_hcorr corrections:
+
+```sh
+$dataviewer.py –c /<codas_processing_path>/<cruise_name.orig>proc/os75xx/     /<codas_processing_path>/<cruise_name_proc>/os75xx 
+```
+> xx = os75nb or os75bb folders.
+
+## 4. Check Water-track calibration 
 
