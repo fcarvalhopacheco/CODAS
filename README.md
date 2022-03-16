@@ -29,4 +29,8 @@ This is a guide to complement and/or simplify some steps required to install [CO
 - [Ubuntu - Anaconda3 - Python 3.6 Environment](https://github.com/fcarvalhopacheco/CODAS-installation/blob/master/installation/anaconda3_py36.md)
 
 
+## Processing Example:
+
+- [Shipboard ADCP Processing](https://github.com/fcarvalhopacheco/CODAS/blob/master/processing/kilo_moana_processing.md)
+
 
